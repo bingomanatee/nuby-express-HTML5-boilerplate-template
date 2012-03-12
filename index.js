@@ -6,7 +6,6 @@ module.exports = {
     static:'public',
 
     on_render:function (req_state, params, done) {
-        console.log('layout rendering: %s', util.inspect(params));
 
         for (var prop in _defaults){
             if (!params.hasOwnProperty(prop)){
